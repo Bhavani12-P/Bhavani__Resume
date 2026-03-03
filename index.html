@@ -3,132 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Puppam Bhavani Chandrika - Software Engineer Resume</title>
+  <title>Puppam Bhavani Chandrika - Resume</title>
   <style>
     :root {
       --primary-color: #2c3e50;
-      --secondary-color: #34495e;
       --accent-color: #3498db;
       --text-color: #333;
-      --light-gray: #f4f4f4;
-      --border-color: #bdc3c7;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body { background: none; padding: 0; margin: 0; }
+      .resume-container { box-shadow: none; border: none; width: 100%; margin: 0; padding: 10mm; }
+      .no-print { display: none; }
     }
 
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      line-height: 1.5;
+      line-height: 1.35;
       color: var(--text-color);
       background-color: #e9ecef;
       margin: 0;
-      padding: 20px;
+      padding: 10px;
     }
 
     .resume-container {
-      max-width: 850px;
+      max-width: 800px;
       margin: 0 auto;
       background: #fff;
-      padding: 40px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-radius: 5px;
+      padding: 25px 40px;
+      border-radius: 4px;
     }
 
     header {
       text-align: center;
-      border-bottom: 2px solid var(--primary-color);
-      padding-bottom: 20px;
-      margin-bottom: 20px;
+      border-bottom: 1.5px solid var(--primary-color);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       color: var(--primary-color);
       text-transform: uppercase;
-      letter-spacing: 1px;
     }
 
     .role-title {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: var(--accent-color);
       font-weight: 600;
-      margin: 5px 0 15px;
+      margin: 2px 0;
     }
 
     .contact-info {
-      font-size: 0.9rem;
-      color: var(--secondary-color);
+      font-size: 0.85rem;
     }
 
     .contact-info a {
-      color: var(--secondary-color);
+      color: var(--text-color);
       text-decoration: none;
-      margin: 0 5px;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
     }
 
     section {
-      margin-bottom: 25px;
+      margin-bottom: 12px;
     }
 
     .section-header {
-      font-size: 1.1rem;
+      font-size: 0.95rem;
       font-weight: bold;
       color: var(--primary-color);
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid #ccc;
       text-transform: uppercase;
-      margin-bottom: 10px;
-      padding-bottom: 3px;
+      margin-bottom: 6px;
     }
 
     .objective-text {
-      font-style: italic;
+      font-size: 0.85rem;
+      margin: 0;
     }
 
     .job-title-row, .edu-title-row {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
       font-weight: bold;
-      color: #000;
+      font-size: 0.9rem;
     }
 
     .company-name, .school-name {
       font-style: italic;
-      color: var(--secondary-color);
-      margin-bottom: 5px;
+      font-size: 0.85rem;
+      color: #555;
       display: block;
+      margin-bottom: 2px;
     }
 
     ul {
-      margin: 8px 0;
-      padding-left: 20px;
+      margin: 4px 0;
+      padding-left: 18px;
     }
 
     li {
-      margin-bottom: 6px;
-      font-size: 0.95rem;
+      margin-bottom: 2px;
+      font-size: 0.85rem;
     }
 
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 5px 20px;
     }
 
     .skill-category {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
-    .skill-category strong {
-      color: var(--primary-color);
+    .education-item {
+      margin-bottom: 5px;
     }
 
-    @media print {
-      body { background: none; padding: 0; }
-      .resume-container { box-shadow: none; border: none; max-width: 100%; }
+    /* Compact Grid for Footer Info */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
     }
   </style>
 </head>
@@ -139,89 +137,82 @@
       <h1>PUPPAM BHAVANI CHANDRIKA</h1>
       <div class="role-title">Software Engineer</div>
       <div class="contact-info">
-        <span>📍 Hyderabad, India</span> | 
-        <span>📞 +91 8106956956</span> | 
-        <a href="mailto:bhavanipuppam@gmail.com">📧 bhavanipuppam@gmail.com</a><br>
-        <a href="https://linkedin.com/in/bhavanipuppam/">LinkedIn</a> | 
-        <a href="https://github.com/Bhavani12-P">GitHub</a>
+        📍 Hyderabad, India | 📞 +91 8106956956 | 📧 <a href="mailto:bhavanipuppam@gmail.com">bhavanipuppam@gmail.com</a><br>
+        <a href="https://linkedin.com/in/bhavanipuppam/">LinkedIn</a> | <a href="https://github.com/Bhavani12-P">GitHub</a>
       </div>
     </header>
 
-    <section id="objective">
+    <section>
       <div class="section-header">Objective</div>
       <p class="objective-text">
-        Results-driven B.Tech Computer Science (AI) graduate and aspiring Software Engineer with hands-on experience in building responsive web applications and AI models. Proven ability to optimize development workflows and improve system reliability through SDLC best practices. Expert in leveraging GitHub Actions for CI/CD and committed to delivering high-quality, user-centric digital solutions.
+        Results-driven B.Tech Computer Science (AI) graduate and Software Engineer with hands-on experience in building responsive web applications and AI models. Expert in leveraging GitHub Actions for CI/CD and committed to delivering high-quality, user-centric digital solutions using SDLC best practices.
       </p>
     </section>
 
-    <section id="experience">
+    <section>
       <div class="section-header">Experience</div>
-      <div class="experience-item">
+      <div>
         <div class="job-title-row">
           <span>Front-End Developer Intern</span>
           <span>July 2025 – Jan 2026</span>
         </div>
         <span class="company-name">Chervic Advisory Services, Bengaluru, India</span>
         <ul>
-          <li>Developed 5+ responsive web modules using HTML, CSS, and JavaScript, achieving 100% cross-browser compatibility.</li>
-          <li>Boosted deployment efficiency by 30% by orchestrating automated CI/CD pipelines via <strong>GitHub Actions</strong>.</li>
-          <li>Resolved 20+ technical bugs logged in GitHub Issues, significantly improving site architecture.</li>
-          <li>Facilitated 15+ peer code reviews via Pull Requests, ensuring high code quality and seamless API integration within an Agile team.</li>
-          <li>Collaborated with backend engineers to integrate RESTful APIs, improving data rendering speed by 15%.</li>
+          <li>Developed 5+ responsive modules using HTML, CSS, and JS with 100% cross-browser compatibility.</li>
+          <li>Orchestrated automated CI/CD pipelines via <b>GitHub Actions</b>, boosting deployment efficiency by 30%.</li>
+          <li>Resolved 20+ technical bugs in GitHub Issues, significantly improving site architecture.</li>
+          <li>Facilitated 15+ peer code reviews via Pull Requests within an Agile environment.</li>
+          <li>Collaborated with backend teams to integrate REST APIs, improving data rendering speed by 15%.</li>
         </ul>
       </div>
     </section>
 
-    <section id="projects">
+    <section>
       <div class="section-header">Projects</div>
-      <div class="project-item">
+      <div>
         <div class="job-title-row">
           <span>Smart Traffic Monitoring Dashboard (Deep Learning)</span>
           <span>Dec 2024 – Apr 2025</span>
         </div>
         <ul>
-          <li>Engineered a desktop GUI using Tkinter to visualize real-time traffic data, processing inputs from CNN models with <strong>92% classification accuracy</strong>.</li>
-          <li>Integrated automated visual alerts, reducing the need for manual traffic monitoring by approximately 40%.</li>
+          <li>Engineered a desktop GUI using Tkinter for real-time traffic data visualization using CNN models (92% accuracy).</li>
+          <li>Integrated automated visual alerts, reducing manual monitoring requirements by 40%.</li>
         </ul>
       </div>
     </section>
 
-    <section id="skills">
+    <section>
       <div class="section-header">Skills</div>
       <div class="skills-grid">
-        <div class="skill-category"><strong>Engineering:</strong> HTML5, CSS3, JavaScript, React.js, Responsive Design</div>
-        <div class="skill-category"><strong>Collaboration:</strong> GitHub (PRs, Issues, Actions), CI/CD, Version Control</div>
+        <div class="skill-category"><strong>Engineering:</strong> React.js, JavaScript, HTML5, CSS3, Responsive Design</div>
         <div class="skill-category"><strong>Dev Tools:</strong> VS Code, Git, Webpack, Terminal, Linux</div>
+        <div class="skill-category"><strong>Collaboration:</strong> GitHub (PRs, Actions), CI/CD, Version Control</div>
         <div class="skill-category"><strong>Methodologies:</strong> SDLC, Agile/Scrum, OOP, Manual Testing</div>
       </div>
     </section>
 
-    <section id="education">
-      <div class="section-header">Education</div>
-      <div class="education-item">
-        <div class="edu-title-row">
-          <span>B.Tech in Computer Science (AI)</span>
-          <span>2021 – 2025</span>
+    <div class="footer-grid">
+      <section>
+        <div class="section-header">Education</div>
+        <div class="education-item">
+          <div class="edu-title-row"><span>B.Tech in Computer Science (AI)</span> <span>2021 – 2025</span></div>
+          <span class="school-name">Gates Institute of Technology — CGPA: 7.79/10</span>
         </div>
-        <span class="school-name">Gates Institute of Technology — CGPA: 7.79/10</span>
-      </div>
-      <div class="education-item">
-        <div class="edu-title-row">
-          <span>Intermediate (MPC)</span>
-          <span>2019 – 2021</span>
+        <div class="education-item">
+          <div class="edu-title-row"><span>Intermediate (MPC)</span> <span>2019 – 2021</span></div>
+          <span class="school-name">Narayana Junior College — 91%</span>
         </div>
-        <span class="school-name">Narayana Junior College — Percentage: 91%</span>
-      </div>
-    </section>
+      </section>
 
-    <section id="certifications">
-      <div class="section-header">Certifications</div>
-      <ul>
-        <li>Frontend Development Internship Certificate – Chervic Advisory Services</li>
-        <li>Full Stack Web Development – Foundation Certification</li>
-        <li>NPTEL Certification – Internet of Things (IoT)</li>
-      </ul>
-    </section>
+      <section>
+        <div class="section-header">Certifications</div>
+        <ul style="margin:0; padding-left: 15px;">
+          <li style="font-size: 0.8rem;">Frontend Internship – Chervic Advisory</li>
+          <li style="font-size: 0.8rem;">Full Stack Web – Foundation</li>
+          <li style="font-size: 0.8rem;">NPTEL – Internet of Things (IoT)</li>
+        </ul>
+      </section>
+    </div>
   </div>
 
 </body>
