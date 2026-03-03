@@ -1,2 +1,2 @@
 # Bhavani__Resume
-Frontend Developer Resume
+Full Stack Developer Resume
