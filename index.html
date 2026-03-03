@@ -2,199 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Puppam Bhavani Chandrika – Cybersecurity Fresher</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppam Bhavani Chandrika - Software Engineer Resume</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #34495e;
+      --accent-color: #3498db;
+      --text-color: #333;
+      --light-gray: #f4f4f4;
+      --border-color: #bdc3c7;
     }
 
-    .resume {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 8px;
-      color: #000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--text-color);
+      background-color: #e9ecef;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin-bottom: 5px;
-      font-size: 28px;
-      text-align: center;
+      margin: 0;
+      font-size: 2.2rem;
+      color: var(--primary-color);
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
-    h2 {
-      text-align: center;
-      font-size: 18px;
-      margin-top: 0;
-      font-weight: bold;
-      color: #2c3e50;
+    .role-title {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+      font-weight: 600;
+      margin: 5px 0 15px;
     }
 
-    .contact {
-      text-align: center;
-      font-size: 13px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 15px;
+    .contact-info {
+      font-size: 0.9rem;
+      color: var(--secondary-color);
     }
 
-    .section-title {
+    .contact-info a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    .section-header {
+      font-size: 1.1rem;
       font-weight: bold;
-      font-size: 15px;
-      border-bottom: 1px solid #000;
-      margin-top: 22px;
-      margin-bottom: 8px;
-      padding-bottom: 4px;
-      background-color: #f9f9f9;
-      padding-left: 5px;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
       text-transform: uppercase;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
     }
 
-    p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 5px 0;
+    .objective-text {
+      font-style: italic;
+    }
+
+    .job-title-row, .edu-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .company-name, .school-name {
+      font-style: italic;
+      color: var(--secondary-color);
+      margin-bottom: 5px;
+      display: block;
     }
 
     ul {
-      margin-top: 6px;
+      margin: 8px 0;
       padding-left: 20px;
     }
 
     li {
-      font-size: 13.5px;
-      margin-bottom: 5px;
-    }
-
-    .row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .subtext {
-      font-size: 13px;
-      font-weight: normal;
-      font-style: italic;
-      color: #555;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
     }
 
     .skills-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+    }
+
+    .skill-category {
+      font-size: 0.9rem;
+    }
+
+    .skill-category strong {
+      color: var(--primary-color);
+    }
+
+    @media print {
+      body { background: none; padding: 0; }
+      .resume-container { box-shadow: none; border: none; max-width: 100%; }
     }
   </style>
 </head>
-
 <body>
 
-<div class="resume">
+  <div class="resume-container">
+    <header>
+      <h1>PUPPAM BHAVANI CHANDRIKA</h1>
+      <div class="role-title">Software Engineer</div>
+      <div class="contact-info">
+        <span>📍 Hyderabad, India</span> | 
+        <span>📞 +91 8106956956</span> | 
+        <a href="mailto:bhavanipuppam@gmail.com">📧 bhavanipuppam@gmail.com</a><br>
+        <a href="https://linkedin.com/in/bhavanipuppam/">LinkedIn</a> | 
+        <a href="https://github.com/Bhavani12-P">GitHub</a>
+      </div>
+    </header>
 
-  <h1>PUPPAM BHAVANI CHANDRIKA</h1>
-  <h2>Fresher | Junior Ethical Hacker | SOC Analyst | Network Security Enthusiast</h2>
+    <section id="objective">
+      <div class="section-header">Objective</div>
+      <p class="objective-text">
+        Results-driven B.Tech Computer Science (AI) graduate and aspiring Software Engineer with hands-on experience in building responsive web applications and AI models. Proven ability to optimize development workflows and improve system reliability through SDLC best practices. Expert in leveraging GitHub Actions for CI/CD and committed to delivering high-quality, user-centric digital solutions.
+      </p>
+    </section>
 
-<div class="contact">
-  +91 8106956956 |
-  <a href="mailto:bhavanipuppam@gmail.com">bhavanipuppam@gmail.com</a> |
-  <a href="https://www.linkedin.com/in/bhavanipuppam/" target="_blank">LinkedIn</a> |
-  <a href="https://github.com/Bhavani12-P" target="_blank">GitHub</a> |
-  Hyderabad, India
-</div>
+    <section id="experience">
+      <div class="section-header">Experience</div>
+      <div class="experience-item">
+        <div class="job-title-row">
+          <span>Front-End Developer Intern</span>
+          <span>July 2025 – Jan 2026</span>
+        </div>
+        <span class="company-name">Chervic Advisory Services, Bengaluru, India</span>
+        <ul>
+          <li>Developed 5+ responsive web modules using HTML, CSS, and JavaScript, achieving 100% cross-browser compatibility.</li>
+          <li>Boosted deployment efficiency by 30% by orchestrating automated CI/CD pipelines via <strong>GitHub Actions</strong>.</li>
+          <li>Resolved 20+ technical bugs logged in GitHub Issues, significantly improving site architecture.</li>
+          <li>Facilitated 15+ peer code reviews via Pull Requests, ensuring high code quality and seamless API integration within an Agile team.</li>
+          <li>Collaborated with backend engineers to integrate RESTful APIs, improving data rendering speed by 15%.</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="section-title">Professional Summary</div>
-  <p>
-    Enthusiastic B.Tech (AI) graduate with specialized knowledge in <strong>Network Security</strong>, <strong>Ethical Hacking</strong>, and <strong>Application Security</strong>. CISCO Networking Academy Certified with hands-on internship experience in vulnerability assessment and secure coding practices. Passionate about cyber threat detection and incident response. Strong foundation in penetration testing tools and security methodologies. Eager to launch a career in cybersecurity, contributing to threat detection, vulnerability management, and protecting organizational assets from evolving cyber threats.
-  </p>
+    <section id="projects">
+      <div class="section-header">Projects</div>
+      <div class="project-item">
+        <div class="job-title-row">
+          <span>Smart Traffic Monitoring Dashboard (Deep Learning)</span>
+          <span>Dec 2024 – Apr 2025</span>
+        </div>
+        <ul>
+          <li>Engineered a desktop GUI using Tkinter to visualize real-time traffic data, processing inputs from CNN models with <strong>92% classification accuracy</strong>.</li>
+          <li>Integrated automated visual alerts, reducing the need for manual traffic monitoring by approximately 40%.</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="section-title">Technical Skills</div>
-  <div class="skills-grid">
-    <div>
-      <p><strong>Cybersecurity:</strong> Ethical Hacking, OWASP Top 10, Vulnerability Assessment, Penetration Testing Basics, IAM, Cryptography, Threat Detection, IDS Concepts</p>
-      <p><strong>Networking:</strong> TCP/IP, DNS/DHCP, Routing & Switching (CISCO), Firewalls, VPNs, Packet Analysis, Network Troubleshooting</p>
-      <p><strong>Operating Systems:</strong> Linux (Kali Linux, Ubuntu, CentOS), Windows Administration, Command Line (Bash), Shell Scripting</p>
-    </div>
-    <div>
-      <p><strong>Tools & Platforms:</strong> Nmap, Wireshark, Burp Suite, Metasploit, OWASP ZAP, GitHub Actions, Git, Hashcat</p>
-      <p><strong>Programming:</strong> Python (Security Scripting), JavaScript, HTML5/CSS3, SQL, Bash</p>
-      <p><strong>Methodologies:</strong> Secure SDLC, Vulnerability Management, Manual Testing, Risk Assessment, Agile/Scrum</p>
-    </div>
+    <section id="skills">
+      <div class="section-header">Skills</div>
+      <div class="skills-grid">
+        <div class="skill-category"><strong>Engineering:</strong> HTML5, CSS3, JavaScript, React.js, Responsive Design</div>
+        <div class="skill-category"><strong>Collaboration:</strong> GitHub (PRs, Issues, Actions), CI/CD, Version Control</div>
+        <div class="skill-category"><strong>Dev Tools:</strong> VS Code, Git, Webpack, Terminal, Linux</div>
+        <div class="skill-category"><strong>Methodologies:</strong> SDLC, Agile/Scrum, OOP, Manual Testing</div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-header">Education</div>
+      <div class="education-item">
+        <div class="edu-title-row">
+          <span>B.Tech in Computer Science (AI)</span>
+          <span>2021 – 2025</span>
+        </div>
+        <span class="school-name">Gates Institute of Technology — CGPA: 7.79/10</span>
+      </div>
+      <div class="education-item">
+        <div class="edu-title-row">
+          <span>Intermediate (MPC)</span>
+          <span>2019 – 2021</span>
+        </div>
+        <span class="school-name">Narayana Junior College — Percentage: 91%</span>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="section-header">Certifications</div>
+      <ul>
+        <li>Frontend Development Internship Certificate – Chervic Advisory Services</li>
+        <li>Full Stack Web Development – Foundation Certification</li>
+        <li>NPTEL Certification – Internet of Things (IoT)</li>
+      </ul>
+    </section>
   </div>
-
-  <div class="section-title">Certifications</div>
-  <ul>
-    <li><strong>Cybersecurity Specialization</strong> – CISCO Networking Academy (Completed)</li>
-    <li><strong>Certified Ethical Hacker (CEH)</strong> – In Progress / Certification Candidate (Expected: 2026)</li>
-    <li><strong>Internet of Things (IoT) Security</strong> – NPTEL Certification (Completed)</li>
-    <li><strong>Full Stack Web Development (Secure Integration)</strong> – Foundation Certification (Completed)</li>
-  </ul>
-
-  <div class="section-title">Professional Experience</div>
-
-  <div class="row">
-    <span>Software Engineer Intern - Security Team</span>
-    <span>July 2025 – Jan 2026</span>
-  </div>
-  <p class="subtext">Chervic Advisory Services, Bengaluru, India</p>
-
-  <ul>
-    <li>Integrated <strong>automated security scanning</strong> within CI/CD pipelines using GitHub Actions, identifying vulnerabilities in real-time and reducing security risks by 30%.</li>
-    <li>Identified and assisted in patching <strong>20+ security vulnerabilities</strong> in web applications, focusing on XSS (Cross-Site Scripting) and SQL Injection prevention using OWASP guidelines.</li>
-    <li>Gained hands-on experience with <strong>Linux-based penetration testing</strong> (Kali Linux, Ubuntu) for secure API component testing and validation.</li>
-    <li>Participated in security code reviews on 50+ pull requests, learning secure coding practices and authentication mechanisms.</li>
-    <li>Documented security findings and contributed to remediation plans, improving team security awareness.</li>
-  </ul>
-
-  <div class="section-title">Key Projects</div>
-
-  <div class="row">
-    <span>AI-Driven Network Anomaly Detection System (IDS Prototype)</span>
-    <span>Dec 2024 – Apr 2025</span>
-  </div>
-
-  <ul>
-    <li>Developed a real-time network monitoring system using CNN (Convolutional Neural Networks) with 92% detection accuracy to identify irregular traffic patterns and potential security breaches—prototype Intrusion Detection System (IDS).</li>
-    <li>Built an interactive alert dashboard to visualize network anomalies and potential threats, reducing manual threat monitoring time by 40%.</li>
-    <li><strong>Technologies:</strong> Python, TensorFlow, Keras, Pandas, Wireshark, Network Traffic Analysis</li>
-  </ul>
-
-  <div class="row">
-    <span>Web Application Security Assessment</span>
-    <span>Ongoing</span>
-  </div>
-
-  <ul>
-    <li>Performing basic penetration testing on web applications using Burp Suite, identifying vulnerabilities including authentication flaws and input validation issues.</li>
-    <li>Learning OWASP Top 10 security assessment methodologies.</li>
-  </ul>
-
-  <div class="section-title">Education</div>
-
-  <p><strong>B.Tech in Computer Science (Artificial Intelligence)</strong><br>
-  Gates Institute of Technology | CGPA: 7.79/10 (2021 – 2025)</p>
-
-  <p><strong>Intermediate (MPC - Mathematics, Physics, Chemistry)</strong><br>
-  Narayana Junior College | 91% (2019 – 2021)</p>
-
-  <div class="section-title">Key Strengths</div>
-  <ul>
-    <li>Strong foundation in security fundamentals with hands-on internship experience.</li>
-    <li>Practical experience identifying and documenting security vulnerabilities.</li>
-    <li>Proficiency in industry-standard security tools (Wireshark, Burp Suite, Nmap, Metasploit).</li>
-    <li>Quick learner with ability to grasp complex security concepts and apply them practically.</li>
-    <li>Motivated to pursue CEH certification and advance cybersecurity career.</li>
-  </ul>
-
-</div>
 
 </body>
 </html>
